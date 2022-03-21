@@ -41,32 +41,10 @@
 
 /* HEADER */
 div#container-wrap {
-    background-image: url(none);
+    background: url("https://wanderers-sandbox.wdfiles.com/local--files/admin%3Athemes/wlsb-headerbg.png") top no-repeat;
+    background-size: auto 142px;
 }
 
-div#extra-div-1,
-div#extra-div-2 {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 140px;
-    top: 0;
-    left: 0;
-}
-
-div#extra-div-1 {
-    background-image: url("https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wlheader_bg.png");
-    background-size: 31.250rem;
-    z-index: -1;
-    mix-blend-mode: hard-light;
-}
-
-div#extra-div-2 {
-    background: var(--gradient-header);
-    background-size: 31.250rem;
-    background-repeat: repeat;
-    z-index: -2;
-}
 
 div#extra-div-3 {
     height: 22px;
@@ -357,7 +335,7 @@ body {
 }
 
 #page-content {
-    font-size: .835rem;
+    font-size: 1.0em;
     letter-spacing: .3px;
     word-spacing: .8px;
 }
@@ -510,8 +488,8 @@ hr {
 /* TABLES */
 table.wiki-content-table th {
     color: rgb(var(--bright-accent));
-    background-color: rgb(var(--light-gray-monochrome));
-    border-color: rgb(108, 138, 112);
+    background-color: rgb(var(--dark-gray-monochrome));
+    border-color: rgb(70, 130, 183);
 }
 
 /* footnote by 7happy7 */
