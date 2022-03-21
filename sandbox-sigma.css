@@ -474,7 +474,7 @@ a.newpage {
 /* BLOCKQUOTES */
 blockquote,
 div.blockquote {
-       background: rgb(var(--pale-gray-monochrome));
+       background: rgb(var(--very-light-gray-monochrome));
        border: 3px outset rgb(var(--medium-accent));
 }
 
@@ -528,8 +528,8 @@ content: ",";
         width: unset;
     margin: unset;
     padding: 20px;
-    background-color: #EEF6EE;
-        border: solid 1px #112211;
+    background-color: rgb(243, 250, 253);
+        border: solid 1px rgb(70,130,183);
 }
 
 /* TABVIEW */
