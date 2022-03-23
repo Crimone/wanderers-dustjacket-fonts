@@ -72,7 +72,7 @@ div#extra-div-3 {
     font-family: var(--header-font);
 }
 #header h1 a::before {
-    content: "永夜水族馆";
+    content: "Evernight Aquarium";
     color: rgb(var(--bright-accent));
     text-shadow: inherit;
     background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
