@@ -83,6 +83,10 @@ div#extra-div-3 {
     font-size: 125%;
 }
 
+#header h2 span {
+    display: none;
+}
+
 @media (max-width: 767px) {
     #header {
         background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/wl_logo.png) 2px 72px no-repeat;
@@ -93,7 +97,6 @@ div#extra-div-3 {
         padding: 95px 0px;
     }
 }
-
 /* LOG-IN INFO */
 #login-status {
     color: rgb(var(--pale-gray-monochrome));
