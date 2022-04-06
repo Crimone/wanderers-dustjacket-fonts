@@ -1,792 +1,366 @@
-[[module CSS]]
-@import url("http://evernight-aquarium.wdfiles.com/local--code/theme%3Asandbox-sigma/1");
+[[module css]]
+ @import url("https://cdn.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@3.2.2/personnel-file.css");
 [[/module]]
 
-[[div_ style="display:none"]]
-[[embed]]
-<iframe src="//scp-wiki-cn.wdfiles.com/local--files/nav%3Aside/styleFrame.html?%3Aroot%7B--body-font%3A%20adelle-sans%2C'Lato'%2C'%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91'%2Csans-serif%3B--header-font%3A%20'zuijinregular'%2C'Poppins'%2Ckaiti%2Clisu%2Csans-serif%3B--bright-accent%3A%20255%2C219%2C90%3B--dark-accent%3A%20185%2C150%2C17%3B%7D.side-block%7Bborder-width%3A%201px%3Bborder-style%3A%20solid%3Bborder-color%3A%20rgb(var(--dark-accent))%3Bborder-radius%3A%2010px%3Bbackground-color%3A%20white%3Bbox-shadow%3A%200%202px%206px%20rgba(var(--dark-accent)%2C.5)%3Bmargin-bottom%3A%2015px%3Bpadding%3A%2010px%3Bfont-family%3A%20var(%20--body-font)%3B%7D.side-block%20.heading%7Bwidth%3A%20auto%3Bmargin-top%3A%200%3Bmargin-bottom%3A%205px%3Bfont-size%3A%201rem%3Bcolor%3A%20rgb(var(--dark-accent))%3Bborder-bottom-color%3A%20rgb(var(--dark-accent))%3Bfont-family%3A%20var(--header-font)%3B%7D.side-block%20div.menu-item%20img%7Bfilter%3A%20hue-rotate(-171deg)%3B%7D.side-block%20div.menu-item%20a%7Bcolor%3A%20rgb(93%2C111%2C93)%3B%7D%3A%3A-moz-selection%7Bbackground%3A%20rgba(var(--bright-accent)%2C0.5)%3B%7D%3A%3Aselection%7Bbackground%3A%20rgba(var(--bright-accent)%2C0.5)%3B%7D" name="styleFrame"></iframe>
-[[/embed]]
-[[/div]]
-
-[[iftags +theme]]
-[[>]]
-**评分：**
-[[module Rate]]
-[[/>]]
-
-[[>]]
-**评分模块与著作信息模块：**
-[[/>]]
-
-[[include :scp-wiki-cn:credit:start]]
-页面信息
-[[include :scp-wiki-cn:credit:more]]
-更多页面信息
-[[include :scp-wiki-cn:credit:end]]
-
-+ 使用方法
-
-这是一个基于当前[https://wanderers-library.wikidot.com/ 被放逐者之图书馆] CSS 版式的 Sigma-9 版式。欲查看此版式的黑标版本，请点击[[[theme:dustjacket|这里]]]。欲查看基于被放逐者之图书馆经典 CSS 版式的版式，请点击[[[theme:wanderers|这里]]]。
-
-此版式旨在应用于与被放逐者之图书馆相关的文章，例如[[[goi-formats#sh|蛇之手格式]]]。
-
-在你的作品开头添加如下语法以应用此版式：
-
-> @@[[include :scp-wiki-cn:theme:dustjacket-sigma]]@@
-
-你可以通过点击页面底部的“+ 选项”、“反向链接”来查看任何页面的反向链接。
-
-+ 示例
-
-[[include component:image-block name=https://wanderers-library.wdfiles.com/local--files/component%3Atheme/wandererslibary_logobg.png|caption=被放逐者之图书馆标志|width=200px]]
-
-可通过五个连字符“@@-----@@”创建水平分割线。若它未被放在其他部件（诸如引用块）中，则会左右延伸贯穿页面。这种将文件分割为多个部分的线就是分割线。
-
-----
-
-如果将“@@-----@@”放入类（class）为“fancyhr”的 div 元素中，则可以显示另一种水平线样式，如下所示：
-> @@[[div_ class="fancyhr"]]@@
-> @@----@@
-> @@[[/div]]@@
-
-效果如下：
-
-[[div_ class="fancyhr"]]
-----
-[[/div]]
-
-[[div_ class="fancyborder"]]
-任何元素添加“fancyborder”类（class），即可显示特殊边框。例如，这是此方块的代码：
-[[div_ class="code"]]
-@@[[div_ class="fancyborder"]]@@
-@@文字内容@@
-@@[[/div]]@@
-[[/div]]
-[[/div]]
-
-脚注前方会添加“(”或“,”。[[footnote]]这能让你以更清爽的方式添加多个脚注。[[/footnote]][[footnote]]一些浏览器可能无法很好地支持此样式。[[/footnote]]
-
-[[footnoteblock]]
-
-标题可通过在一行字起始处输入 1 至 6 个加号“+”来创建。
-
-[[collapsible show="+ 标题" hide="- 标题"]]
-+ 1 级标题
-
-++ 2 级标题
-
-+++ 3 级标题
-
-++++ 4 级标题
-
-+++++ 5 级标题
-
-++++++ 6 级标题
-[[/collapsible]]
-
-@@ @@
-
-[[tabview]]
-[[tab 分页]]
-此为分页（tab view）。
-[[/tab]]
-[[tab 分页]]
-看，这有更多文字。
-
-多么精巧绝伦。
-[[/tab]]
-[[tab 长 Tab]]
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-
-这是一个长的 tab，它有很多文字。
-[[/tab]]
-[[tab 空 Tab]]
-[[/tab]]
-[[tab 空 Tab]]
-[[/tab]]
-[[tab 空 Tab]]
-[[/tab]]
-[[tab 空 Tab]]
-[[/tab]]
-[[tab 空 Tab]]
-[[/tab]]
-[[tab 空 Tab]]
-[[/tab]]
-[[/tabview]]
-
-> 这是一个引用块，在一行字的起始处加上“> ”来创建。
->
-> 更多文字
-> -----
-> 一条分割线
->
->> 嵌套引用块
-
-||~ 这是 ||~ 表格 ||
-||你应该老早 || 就知道怎么 ||
-||||做这个了吧 ||
-
-[[=]]
-正文字体为 Adelle Sans / 微软雅黑。
-[[span style="font-family: var(--header-font);"]]页眉及标题字体为 Zuijin / 楷体。[[/span]]
-[[span style="font-family: var(--mono-font);"]]等宽字为 Adaptive Mono / 新宋体。[[/span]]
-[[/=]]
-
------
-
-+ 源代码
-
-[[code type="css"]]
-
-/*
-    Sigma-9 Wanderers' DustJacket Theme
-    [2020 Wikidot Theme]
-    By DrMacro
-    Adapted from Wanderers' DustJacket Theme by Woedenaz
-    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
-*/
-
-@import url("https://wanderers-library.wikidot.com/component:dustjacket-theme-typefaces/code/1");
-@import url("https://use.typekit.net/tqr1skr.css");
-
-:root {
-    --body-font: adelle-sans, 'Lato', '微软雅黑', sans-serif;
-    --header-font: 'zuijinregular', 'Poppins', kaiti, lisu, sans-serif;
-    --title-font: 'zuijinregular', 'Poppins', kaiti, lisu, sans-serif;
-    --mono-font: adaptive-mono, "PT Mono", "Andale Mono", "Courier New", NSimSun, Courier, monospace;
-
-    --white-monochrome: 252, 252, 252;
-    --pale-gray-monochrome: 214, 245, 255;
-    --light-pale-gray-monochrome: 215, 255, 255;
-
-    --very-light-gray-monochrome: 220, 222, 230;
-    --light-gray-monochrome: 70, 130, 183;
-
-    --gray-monochrome: 0, 35, 100;    
-
-    --dark-gray-monochrome: 10, 30, 55;
-
-    --bright-accent: 255, 219, 90;
-    --medium-accent: 228, 180, 28;
-    --dark-accent: 185, 150, 17;
-
-    --gradient-header:
-           linear-gradient(to bottom, rgba(var(--dark-gray-monochrome), 1) 0%,
-           rgba(var(--dark-gray-monochrome), 1) 30%,
-           rgba(var(--bright-accent)) 100%);
-    --gradient-sidemenu-header: linear-gradient(10deg, rgba(var(--medium-accent), 0.45), rgba(var(--medium-accent), 0.55));
-
-    scrollbar-color: rgb(var(--medium-accent)) rgb(var(--dark-gray-monochrome));
-}
-
-/* HEADER */
+[[module css]]
+@import url(http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/7);
 div#container-wrap {
-    background: url("https://wanderers-sandbox.wdfiles.com/local--files/admin%3Athemes/wlsb-headerbg.png") top no-repeat;
-    background-size: auto 142px;
+background: url(http://kaktuskontainer.wdfiles.com/local--files/stormbreath-hub-page/body_bg.png) top left repeat-x;}
+
+/* 藍光字 */
+.neon {
+color:#8ec3f9;
+text-shadow: 0 0 5px #f0f, 0 0 1px #00f, 0 0 1px #f00, 0 0 1px #00f,
+0 0 5px #0ff, 0 0 10px #0ff, 0 0 1px #f0f, 0 0 1px #fff;
 }
 
+/* 連結顏色與模糊特效 */
+a:link{color: #9900FF}
+a:visited{color: #9900FF}
+a:hover{color: #cd00bd}
 
-div#extra-div-3 {
-    height: 22px;
-    width: 100%;
-    top: 140px;
-    position: absolute;
-    background-color: rgb(var(--gray-monochrome));
-    background-image: rgb(var(--gray-monochrome));
-    border-top: solid 1px rgb(var(--bright-accent));
-    border-bottom: solid 1px rgb(var(--bright-accent));
-} /* Green top bar */
+a:link{color: #2200AA}
+a:visited{color: #2200AA}
+a:hover{color: #cd00bd}
 
-#header {
-    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/wl_logo.png) 13px 41px no-repeat;
-    background-size: 94px 94px;
-}
-#header > h1 > a > span {
-    display: none;
-}
-#header h1 a {
-    color: transparent;
-    text-shadow: none;
-    padding: 85px 0 25px;
-    font-size: 140%;
-    font-family: var(--header-font);
-}
-#header h1 a::before {
-    content: "被放逐者之图书馆";
-    color: rgb(var(--bright-accent));
-    text-shadow: inherit;
-    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    overflow-wrap: normal;
-    font-size: 125%;
-}
 
-#header h2 span {
-    display: none;
-}
+.underline-on-hover a:link{color: black}
 
-@media (max-width: 767px) {
-    #header {
-        background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/wl_logo.png) 2px 72px no-repeat;
-        background-size: 50px 50px;
-    }
-    #header h1 a {
-        font-size: 65%;
-        padding: 95px 0px;
-    }
-}
+.blur {color: transparent; text-shadow: 0 0 6px rgba(0,0,0,.3); }
 
-/* LOG-IN INFO */
-#login-status {
-    color: rgb(var(--pale-gray-monochrome));
-    font-weight: 600;
-    letter-spacing: 0.05em;
-}
-
-#login-status * {
-    font-family: var(--header-font);
-    letter-spacing: 0.05em;
-}
-
-#login-status ul a {
-    color: rgb(var(--dark-gray-monochrome));
-    background: rgb(var(--pale-gray-monochrome));
-}
-
-/* SEARCH BAR */
- #search-top-box-input {
-     background-color: rgb(var(--gray-monochrome));
-     border: solid 1px rgb(var(--medium-accent));
-     border-radius: 0;
-}
-#search-top-box input.empty {
-    color: rgba(var(--bright-accent), 0.5);
-}
- #search-top-box-input:hover,
- #search-top-box-input:focus {
-     background: rgb(var(--light-gray-monochrome));
-     border: solid 1px rgb(var(--bright-accent));
-     border-radius: 0;
-}
- #search-top-box-form input[type=submit] {
-     background: linear-gradient(to bottom, rgb(var(--bright-accent)),rgb(var(--medium-accent)),rgb(var(--dark-accent)));
-     background-color: rgb(var(--dark-accent));
-     color: white;
-     transition: color 0.25s;
-     border: solid 1px rgb(var(--medium-accent));
-     border-radius: 0;
-}
- #search-top-box-form input[type=submit]:hover,
- #search-top-box-form input[type=submit]:focus {
-     background: linear-gradient(to bottom, rgb(var(--bright-accent)),rgb(var(--medium-accent)),rgb(var(--dark-accent)));
-     background-color: rgb(var(--dark-accent));
-     color: rgb(var(--gray-monochrome));
-     border: solid 1px rgb(var(--medium-accent));
-     border-radius: 0;
-}
-
-@media (max-width: 767px) {
-    #search-top-box {
-         top: 115px;
-         right: -10px;
-    }
-}
-
-/* TITLE */
-#page-title {
-    font-size: 210%;
-    font-family: 'IMB Plex Mono';
-    font-weight: 600;
-}
-
-h1, h2, h3, h4, h5, h6, #page-title {
-    font-family: var(--title-font);
-    color: rgb(var(--black-monochrome));
-}
-h1 {
-    margin: .7em 0 .6em;
-    padding: 0 0 .25em;
-    font-weight: 700;
-}
-h2, h3, h4, h5, h6 {
-    margin: .5em 0 .4em;
-    padding: 0;
-    font-weight: 900;
-    letter-spacing: .063rem;
-}
-
-@media (max-width: 767px) {
-    #page-title {
-        font-size: 180%
-    }
-}
-
-/* TOP-BAR SETTINGS */
-#top-bar ul li ul {
-    border-color: rgb(var(--medium-accent));
-}
-#top-bar ul li.sfhover ul li a,
-#top-bar ul li:hover ul li a {
-    background: rgb(var(--pale-gray-monochrome));
-    border-top: 1px solid rgb(var(--medium-accent));
-    padding: 0.3em;
-    padding-left: 0.5em;
-    color: rgb(var(--dark-gray-monochrome));
-    font-family: var(--body-font);
-    font-size: 0.7rem;
-}
-#top-bar ul li a {
-    color: rgb(var(--bright-accent));
-    font-family: var(--header-font);
-    font-size: 0.8rem;
-}
-#top-bar ul li.sfhover a {
-    color: rgb(var(--bright-accent));
-    border-top: solid 1px rgb(var(--bright-accent));
-    font-family: var(--header-font);
-    font-size: 0.8rem;
-}
-
-#top-bar ul li:hover a {
-    background: rgb(var(--gray-monochrome));
-    color: rgb(var(--bright-accent));
-}
-#top-bar ul li ul a, #top-bar a:hover {
-    color: rgb(var(--pale-gray-monochrome));
-}
-#top-bar ul li.sfhover a:hover,
-#top-bar ul li:hover a:hover {
-    background: rgb(var(--gray-monochrome));
-    color: rgb(var(--bright-accent));
-}
-#top-bar ul li ul.sfhover a:hover,
-#top-bar ul li ul:hover a:hover {
-    background: rgb(247, 213, 83);
-    color: rgb(var(--dark-gray-monochrome));
-    font-weight: bold;
-}
-.topbar_arrow {
-    color: rgb(var(--dark-gray-monochrome));
-}
-
-@media (max-width: 479px) {
-    #top-bar ul li a {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-}
-
-/* SIDE-BAR SETTINGS */
-#side-bar {
-    padding: 0;
-    border-style: none;
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    margin-bottom: 0;
-}
-#side-bar .side-block {
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(var(--dark-accent));
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(var(--dark-accent),.5);
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-#side-bar .side-block[style*="#f0fff6"] {
-    background-color: rgb(248, 236, 198) !important;
-}
-
-#side-bar .side-block[style*="#e7e5e8"] {
-    background-color: rgb(234, 223, 183) !important;
-}
-
-#side-bar .side-block[style*="#fff0f0"] {
-    background-color: rgb(246, 234, 196) !important;
-}
-
-#side-bar .side-block[style*="#e5e5ff"] {
-    background-color: rgb(248, 241, 218) !important;
-}
-
-#side-bar .heading {
-    width: auto;
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: rgb(var(--dark-accent));
-    border-bottom-color: rgb(var(--dark-accent));
-    font-family: var(--header-font);
-}
-
-#side-bar .collapsible-block-folded {
-    background-image: none;
-}
-#side-bar .collapsible-block-unfolded-link {
-    border-bottom-color: rgb(var(--dark-accent));
-}
-
-#side-bar .collapsible-block-folded .collapsible-block-link,
-#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
-#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
-    font-size: 1rem;
-    color: rgb(var(--dark-accent));
-    font-family: var(--header-font);
-}
-
-/* SIDE-BAR IMAGES */
-.side-block .menu-item > .image {
-    filter: hue-rotate(-171deg);
-}
-
-/* Patch pour hover imbriqué */
-#top-bar ul li ul li ul {
-    left: 159px;
-}
-
-/* MOBILE SIDE-BAR */
-@media (max-width: 767px) {
-#side-bar {
-    background-color: rgb(var(--pale-gray-monochrome));
-    padding: 1em 1em 0 1em;
-}
-#side-bar:target {
-    border: 1px solid #dedede;
-}
-#side-bar:target .close-menu {
-    background: rgba(0,0,0,0.3) 1px 1px repeat;
-}
-#top-bar div.open-menu a {
-    border: 0.2em solid rgb(var(--bright-accent));
-    background-color: rgb(var(--gray-monochrome));
-    color: rgb(var(--bright-accent));
-    }
-}
-
-/* BODY */
-body {
-    background-color: rgb(var(--white-monochrome));
-    font-family: var( --body-font);
-}
-
-#page-content {
-    font-size: 1.0em;
-    letter-spacing: .3px;
-    word-spacing: .8px;
-}
-
-/* FOOTER */
-#footer {
-    background: rgb(var(--dark-accent));
-    color: rgb(var(--dark-gray-monochrome));
-}
-
-#footer a {
-    color: rgb(var(--dark-gray-monochrome));
-}
-
-/* OTHER STRUCTURAL ELEMENTS */
-
-/* LINKS */
-a {
-    color: rgb(var(--medium-accent));
-    font-weight: bold;
-}
-a:visited {
-    color: rgb(var(--dark-accent));
-}
-#side-bar a,
-#side-bar a:visited,
-#side-bar a.newpage {
-    color: rgb(93, 111, 93);
-}
-blockquote a,
-div.blockquote a {
-    color: rgb(var(--dark-accent));
-}
-blockquote a:visited,
-div.blockquote a:visited {
-    color: rgb(153, 123, 15);
-}
-a.newpage {
-    color: #d61;
-}
-
-/* CODE */
-.code {
-    background-color: rgb(var(--pale-gray-monochrome));
-}
-
-/* RATING MODULE */
-#page-content .page-rate-widget-box {
-    font-size: .8rem;
-}
-
+/* 評分鈕 */
 .page-rate-widget-box .rate-points {
-    background-color: rgb(var(--gray-monochrome)) !important;
-    border-color: rgb(var(--dark-gray-monochrome));
-    color: rgb(var(--bright-accent));
+background-color: #61006c !important;
+border: solid 1px #61006c;
 }
 .page-rate-widget-box .rateup,
 .page-rate-widget-box .ratedown {
-    background-color: rgb(var(--pale-gray-monochrome));
-    border-top-color: rgb(var(--dark-gray-monochrome));
-    border-bottom-color: rgb(var(--dark-gray-monochrome));
+background-color: #f0f8ff;
+border-top: solid 1px #61006c;
+border-bottom: solid 1px #61006c;
 }
 .page-rate-widget-box .rateup a,
 .page-rate-widget-box .ratedown a {
-    background: transparent;
-    color: rgb(var(--gray-monochrome));
+color: #006c00;
 }
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover {
-    background: rgb(var(--gray-monochrome));
-    color: rgb(var(--bright-accent));
+background: #61006c;
+color: #f0f8ff;
 }
 .page-rate-widget-box .cancel {
-    background: transparent;
-    background-color: rgb(var(--gray-monochrome));
-    border-color: rgb(var(--dark-gray-monochrome));
+background-color: #61006c;
+border: solid 1px #61006c;
 }
 .page-rate-widget-box .cancel a {
-    color: rgb(var(--light-gray-monochrome));
+color: #f0f8ff;
 }
 .page-rate-widget-box .cancel a:hover {
-    background-color: rgb(var(--gray-monochrome));
-    color: rgb(var(--bright-accent));
+background: #dccdea;
+color: #f0f8ff;
 }
 
-/* CREDIT MODULE */
-#page-content .rate-box-with-credit-button {
-    background-color: rgb(var(--gray-monochrome));
-    border-color: rgb(var(--dark-gray-monochrome));
-}
-#page-content .rate-box-with-credit-button .creditButton p a {
-    border-left-color: rgb(var(--light-gray-monochrome))
-}
-#page-content .rate-box-with-credit-button .creditButton a {
-    color: rgb(var(--bright-accent));
-}
-#page-content .rate-box-with-credit-button .creditButton a:hover {
-    color: rgb(var(--light-gray-monochrome));
+h1, #page-title {
+    color: #61006c;
 }
 
-#page-content .modalbox {
-     background: white !important;
-     color: rgb(var(--black-monochrome));
-     box-shadow: 0 2px 6px rgba(var(--dark-accent),.5);
-}
+[[/module]]
+[[include :scp-wiki:component:toggle-sidebar]]
 
-.close-credits,
-.credit-back {
-    filter: hue-rotate(-171deg);
-}
+[[>]]
+[[module rate]]
+[[/>]]
 
-/* PAGE ELEMENTS */
+[[>]]
+> = //“我们把碎片收集起来，并为那失去的美而伤怀。//
+> = //强而有力的地之子啊，快把你心中的世界重建的更气派！”//
+> //——歌德《浮士德》//
+[[/>]]
 
-/* BLOCKQUOTES */
-blockquote,
-div.blockquote {
-       background: rgb(var(--very-light-gray-monochrome));
-       border: 3px outset rgb(var(--medium-accent));
-}
+------
+[[=]]
+[[size 140%]][[collapsible show="我的作品" hide="我的作品" folded="no"]][[/size]]
+[[/=]]
+------
 
-/* HORIZONTAL RULES */
-hr {
-    border: 0;
-    border-top: .063rem solid transparent;
-    background-color: rgba(var(--bright-accent));
-    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
-    background-size: cover;
-}
+[[tabview]]
 
-.fancyhr hr {
-    border-top: 2vw solid transparent;
-    background-color: rgba(var(--bright-accent), 0);
-    height: 0;
-    box-sizing: border-box;
-    border-image-source: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_hr.png);
-    border-image-repeat: round round;
-    background: none;
-    border-image-slice: 80 500 80 500 fill;
-    border-image-width: 10em 80em 10em 80em;
-}
+[[tab 代表作]]
+[[<]]
+[[div style="border:solid 2px #004F00; background:#f2f2c2; padding:5px; margin-bottom: 5px;"]]
 
-.fancyborder {
-    box-sizing: border-box;
-    border: 2vw solid rgba(0,0,0,0.5);
-    border-image: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png) 600 round;
-    border-image-width: 6;
-    padding: 2vw;
-}
+[[=]]
+[[size 130%]] **范式转移** [[/size]]
+[[/=]]
 
-/* TABLES */
-table.wiki-content-table th {
-    color: rgb(var(--bright-accent));
-    background-color: rgb(var(--dark-gray-monochrome));
-    border-color: rgb(70, 130, 183);
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=running-away
+|category=wanderers
+|option=noauthor-notags
+|text=“将四散分离的人们联系起来的话语消失了呢
+如果忘记了要说什么的话
+就在过去的历史当中寻找一下吧”
+]]
+------
 
-/* footnote by 7happy7 */
-span:not([class]):not([style]) > sup.footnoteref:first-child > a.footnoteref:before,
-sup.footnoteref > a.footnoteref:before {
-content: "(";
-}
-span:not([class]):not([style]) > sup.footnoteref > a.footnoteref:before {
-content: ",";
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=skydome-aquarium
+|category=wanderers
+|option=noauthor-notags
+|text=随着我一天天长大，我越来越感觉到这里的空气在排斥着自己。空气越来越变得和水一样，阻碍着我的行动，以及让我喘不过气来。那种后脑勺的疼痛感，让我感觉意识和肉体好像要断开连接。
 
-/* Adjusts footnote block at bottom to fit the Hand format better */
-.footnotes-footer {
-        width: unset;
-    margin: unset;
-    padding: 20px;
-    background-color: rgb(243, 250, 253);
-        border: solid 1px rgb(70,130,183);
-}
+渐渐地，我需要的睡眠时间变得越来越长，从8小时增加到9小时，再变得更长，直到接近一天的一半。在梦中的我，像是在那个遥远的地方一样，生活在完全的清醒当中。
+]]
 
-/* TABVIEW */
-.yui-navset .yui-content {
-    border-color: rgb(var(--light-gray-monochrome));
-    border-top-color: rgb(var(--medium-accent));
-    background-color: rgb(243, 250, 253);
-    font-weight: normal;
-}
-.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
-    border-bottom: 0.3em solid rgb(var(--medium-accent));
-}
-.yui-navset .yui-nav a,
-.yui-navset .yui-navset-top .yui-nav a {
-    background-image: none;
-    background-color: rgb(var(--pale-gray-monochrome));
-    font-weight: normal;
-}
-.yui-navset .yui-nav a:hover,
-.yui-navset .yui-nav a:focus {
-    background: rgb(var(--dark-accent));
-    color: white;
-}
-.yui-navset .yui-nav .selected a,
-.yui-navset .yui-nav .selected a:focus, /* Pas d'effet focus/hover pour tab sélectionné */
-.yui-navset .yui-nav .selected a:hover {
-    background-image: none !important;
-    background: rgb(var(--medium-accent));
-    border-color: rgb(var(--medium-accent));
-    color: white;
-}
-.yui-navset li {
-    line-height: normal;
-}
-/* Bordures onglets */
-.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
-    border: 1.2px solid rgb(var(--medium-accent));
-    padding: 0.15em;
-}
-.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
-    border: none !important;
-}
+[[/div]]
+[[/<]]
+[[/tab]]
 
-/* IMAGE BLOCK */
-.scp-image-block .scp-image-caption {
-    background-color: rgb(var(--pale-gray-monochrome));
-}
+[[tab 其他作品]]
+[[<]]
+[[div style="border:solid 2px #004F00; background:#f2f2c2; padding:5px; margin-bottom: 5px;"]]
 
-/* HIGHLIGHTING */
-::-moz-selection {
-    background: rgba(var(--bright-accent), 0.5);
-}
+[[=]]
+[[size 130%]] **范式转移** [[/size]]
+[[/=]]
 
-::selection {
-    background: rgba(var(--bright-accent), 0.5);
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=the-sect-of-the-daytime
+|category=wanderers
+|option=noauthor-notags
+|text=墨丘莉娅时常会感觉自己被放逐在了时间的夹缝之中，一边是不属于自己的其他人的时间，另一边是本应属于自己，可是在当下却不存在的自己的时间。
+]]
+------
 
-/* Page-Tags */
-#main-content .page-tags {
-    border-top: 2px solid rgb(var(--dark-accent));
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=thanatos
+|category=wanderers
+|option=noauthor-notags
+|text=“请论证出为什么按钮不应该按下去……”
+]]
+------
 
-#main-content .page-tags a {
-    display: inline-block;
-    height: 0.8125rem;
-    line-height: 13px;
-    line-height: 0.8125rem;
-    font-size: 11px;
-    font-size: 0.6875rem;
-    font-weight: normal;
-    background: rgb(var(--gray-monochrome));
-    color: rgb(var(--bright-accent));
-    border-bottom-right-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    margin: 0 0 .5rem .75rem;
-    padding: 0.1875rem 0.3125rem 0.1875rem 0;
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=the-world-and-the-aquarium
+|category=wanderers
+|option=noauthor-notags
+|text=“起初有了神说的‘要有光’的话语，随后有了万物……”
+]]
 
-#main-content .page-tags a:before {
-    top: -0.1875rem;
-    left: -0.625rem;
-    width: 0;
-    height: 0;
-    border-color:
-     transparent
-     rgb(48, 48, 52)
-     transparent
-     transparent;
-    border-color:
-     transparent
-     rgb(var(--gray-monochrome, 45, 70, 45))
-     transparent
-     transparent;
-    border-style: solid;
-    border-width: 0.5rem 0.5rem 0.5rem 0;
-    padding: 0 0.0625rem 0.1875rem;
-}
+------
 
-#main-content .page-tags a:before,
-#main-content .page-tags a:after {
-    content: "";
-    float: left;
-    position: relative;
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=a-tale-of-elixir
+|category=wanderers
+|option=noauthor-notags
+|text=在对过去的记忆的搜寻之中，墨丘莉娅突然理解了，原来恐惧和不安在自己小时候就已经如影随形的陪伴在身旁，一直同自己度过了短暂人生中的每一分每一秒。
+她感觉自己在这个无数的书本组成的镜子的房间里，终于彻底看清了自己。
+]]
 
-#main-content .page-tags a:after {
-    --box-shadow: rgb(var(--gray-monochrome, 45, 70, 45));
-    top: 0.28125rem;
-    left: -0.5rem;
-    width: 0.25rem;
-    height: 0.25rem;
-    border-radius: 0.125rem;
-    background-color: rgb(var(--bright-accent, 255, 219, 90));
-    box-shadow: -0.0625rem -0.0625rem 0.125rem var(--box-shadow);
-}
+------
 
-.page-tags span {
-    border-top: .5rem solid transparent;
-}
+[[include :evernight-aquarium:component:excerpts-tool
+|link=einsamkeit
+|category=wanderers
+|option=noauthor-notags
+|text=不知道在哪一天早上，墨丘莉娅发现自己周围的同学们变成了人偶。要如何和人偶相处，如何避免自己人类的身份暴露？如果自己的人类身份露馅了的话，可能就会大祸临头，这让她只是一想就觉得喘不过气。
+]]
 
-[[/code]]
-[[/iftags]]
+[[/div]]
+
+------
+
+
+[[div style="border:solid 2px #004F00; background:#f2f2c2; padding:5px; margin-bottom: 5px;"]]
+
+[[=]]
+[[size 130%]] **恶性裂痕** [[/size]]
+[[/=]]
+
+[[include :evernight-aquarium:component:excerpts-tool
+|link=life-contest
+|category=wanderers
+|option=noauthor-notags
+|text=在墨丘利乌斯可以回溯的所有记忆的开始，他就已经和阿尔戈开始了一场旷日持久的竞赛，比赛项目换了又换，从剑到枪再到戟，再到棋子和卡牌，炒锅和锅铲，诗文和书法，但比赛的结束却始终遥遥无期。
+]]
+[[/div]]
+
+------
+
+[[div style="border:solid 2px #004F00; background:#f2f2c2; padding:5px; margin-bottom: 5px;"]]
+
+[[=]]
+[[size 130%]] **翻译** [[/size]]
+[[/=]]
+
+[[include :evernight-aquarium:component:excerpts-tool
+|link=the-wandering-boy
+|category=wanderers
+|option=trans-norate
+|text=以“图书馆GOI格式”转述的SCP项目文档。
+|author=TroyL、thedeadlymoose
+|translater=Mercuresphere
+|tags=pangur, wanderers, 合著, 文集, 档案
+]]
+
+[[/div]]
+[[/<]]
+[[/tab]]
+
+[[/tabview]]
+
+[[/collapsible]]
+
+------
+[[=]]
+[[size 140%]][[collapsible show="我建立的图书馆典籍" hide="我建立的图书馆典籍"]][[/size]]
+[[/=]]
+------
+[[<]]
+[[div style="border:solid 2px #112211; background:#DDEEDD; padding:10px; margin-bottom: 5px;"]]
+
+[[=]]
+[[size 150%]] Paradigm Shift [[/size]]
+
+[[size 150%]] **范式转移** [[/size]]
+[[/=]]
+
+------
+[[div style="border:solid 1px #112211; background:#EEF6EE; padding: 20px; margin-bottom: 3px;"]]
+
+“尽管身在人群之中，但我一直清楚地知道我只是一个异邦人，我不属于这里。”
+
+世界树有着万千分支，但无论哪个分支都有着不属于这里的异邦人。
+《范式转移》就是这样一本以记录那些突然发现自己身处于一个与原本生活的环境有着某种根本差异的新环境当中的人们的经历为主题的文集。
+
+“那些未能适应环境的人往往就这么悄无声息的逝去了，但他们的文学不会随之消亡。”
+[[>]]
+——整理者墨丘莉娅
+[[/>]]
+
+------
+
+= [[span class="exptitle"]][[size 140%]]>>  **[[[wanderers:paradigm-shift-hub|典籍中心页]]]**  <<[[/size]][[/span]]
+
+------
+
+[[div class="boxright"]]
+= [[span class="exptitle"]][[size 130%]]**收藏摘录**[[/size]][[/span]]
+[[module ListPages category="*" separate="no" tags="+范式转移 -中心" order="created_at"]]
+* %%title_linked%%
+[[/module]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/<]]
+[[/collapsible]]
+
+------
+[[=]]
+[[size 140%]][[collapsible show="下叙人设" hide="下叙人设"]][[/size]]
+[[/=]]
+------
+
+
+[[tabview]]
+
+[[tab 墨丘莉娅]]
+[[<]]
+**编号：**PoI-17605
+
+**姓名：**墨丘莉娅
+
+**年龄：**不明
+
+**种族：**被放逐者之图书馆 - “讲解员”型异常实体
+
+**身份：**相关组织Alpha-19 “蛇之手”成员
+
+**简介：**
+
+PoI-17605为被放逐者之图书馆中的一位讲解员型异常实体，自称“墨丘莉娅”，其他身份信息均不明确。在基金会被图书馆完全拒绝之前，PoI-17605曾经与基金会工作人员进行过交流，交流记录显示PoI-17605有着一定程度的感情缺失，推测可能与其受到的异常改造有关。
+
+在基金会被图书馆正式拒绝之后的某个时间点，PoI-17605加入了蛇之手，隶属于[[span class="ruby"]]蛇之手宣传部[[span class="rt"]]Serpent's Hand Publicity Department[[/span]][[/span]]。该部门的主要职责是印刷并向一般民众发放带有异常性质的出版物。这些出版物具有程度极低但确实存在的模因危害，看到出版物的人会逐渐开始相信“人类应该与异常共存”、“在图书馆当中已经达到天下大同，全宇宙的生物均可在此和平共处”等理念。同时这些出版物上往往详尽的记述了据称可用于开启门径的异常仪式的具体内容。（关于基金会尝试复现开启门径的仪式的记录可查阅█████）蛇之手宣传部甚至会把这些出版物发放给基金会成员，通过这种方式对基金会成员和认可基金会作用的其他人士进行策反和煽动。而PoI-17605则是其中较为活跃的一位作者。
+
+因为其对基金会的巨大威胁，特将其列为PoI进行调查。
+
+**补充：**
+
+在基金会对一个已知由蛇之手宣传部控制的异常印刷厂展开突袭的过程中，我们缴获了一本署名“墨丘莉娅”的手账本，以及几篇同样署名“墨丘莉娅”的短篇小说。
+
+这些作品目前未表现出异常性质，但存在只是异常性质过于轻微的可能性，因此现把这些作品同样当作异常物品收容于此，禁止在没有模因过滤目镜的情况下进行任何形式的阅读。
+[[/<]]
+[[/tab]]
+
+[[tab 墨丘利乌斯]]
+[[<]]
+--还没想好。--
+[[/<]]
+[[/tab]]
+
+[[/tabview]]
+
+[[/collapsible]]
+------
+
+[[include component:coltop show=上层叙事|hide=上层叙事]]
+
+------
+[[tabview]]
+[[tab 上层叙事]]
+[[include component:coltop show=+ 我是那想写作浪漫……|hide=- 却总写成了现实的人。]]
+
+[[include component:image-block name=http://evernight-aquarium.wdfiles.com/local--files/admin%3Apersonnel-file/Fesica.jpg |caption=《逃离》中的Fesica，由盒子绘制。|width=300px]]
+
+你好，这里是这个页面的作者——Mercuresphere（可以叫我“水银”）的一些碎碎念。
+
+可能与中分绝大部分成员不同，我是先接触了被放逐者图书馆，后接触SCP的。
+
+图书馆让我接触到了五彩缤纷的文学世界，对我来说图书馆和我的朋友们一样，是可以永远留存于我的记忆当中的事物。无论图书馆的未来最终是什么样子，我都不会忘记与图书馆的相遇。
+
+因为种种原因，[[[wanderers:running-away| 我基本上很少出门]]]。[[[wanderers:skydome-aquarium| 我所了解的现实的样子也只是以现实主义文学作品作为一个严重失真的替代]]]。在不知不觉之中，[[[wanderers:einsamkeit| 名为孤独的病症浮现在了我的身上]]]，也许这是人类的普遍困境在我这里的投射。
+
+马尔克斯认为孤独是人类普遍具有的性质，而人类的最终归宿就是像奥雷里亚诺上校、蕾贝卡、阿玛兰妲那样接受孤独，与孤独共存。但至少现在，我还无法接受这种观点——虽然孤独的宿命已经在我的身上显现出迹象，我也愿意先试着用我的一切与孤独战斗。
+
+毕竟思想这种东西，是为了被传达出去才诞生于我们的意识当中的。
+
+------
+
+
+
+在我的创作当中，我的朋友盒子、jojo以及三位前辈：[[*user #5M7]]、[[*user #ONXY]]、[[*user #Undyne_Bishop]]给我提供了很大帮助，谨在这里表示诚挚的感谢。
+
+------
+
+[[include component:colend]]
+[[/tab]]
+[[tab 成就墙]]
+
+[[include :evernight-aquarium:admin:achievements]]
+
+[[/tab]]
+[[/tabview]]
+[[include component:colend]]
+------
+[[=]]
+[[size 140%]][[collapsible show="留言板" hide="留言板"]][[/size]]
+[[/=]]
+------
+[[<]]
+
+> 这里是留言板，请尽情留言吧。
+
+> 作者页终于做好了。--花了一个下午加一个晚上的时间倒腾CSS--，作品展示使用的是[[*user #Etinjat]]制作的节选卡片组件，非常感谢。——[[*user #Mercuresphere]]
+
+> 祝贺人事！——[[*user Seven Trillion]]
+
+> 留名！水银的图书馆作品别有韵味，希望日后多多出好文！——[[*user agonark]]
+>> 感谢您的认可和支持！——[[*user #Mercuresphere]]
+
+> 恭喜！——[[*user HERE IS A BUTTERFLY ]]
+
+[[/<]]
+
+[[/collapsible]]
+
+------
