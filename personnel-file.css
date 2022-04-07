@@ -14,7 +14,6 @@
     --excborder-title-width: 1px;
     --excerpts-bgcolor: #FFFDD9;
     --excerpts-text: #333;
-    --excerpts-link: #059400;
     --excerpts-wrap-margin: inherit;
     --golden-color:  0, 79, 0;
     --excborder-wrap-color: rgb(var(--golden-color));
@@ -37,10 +36,6 @@
     margin: var(--excerpts-wrap-margin);
 }
 
-.excerpts-wrap a,
-.excerpts-wrap a:visited {
-    color: var(--excerpts-link);
-}
 
 .excerpts-author .excerpts-cell-1 span:last-child{
     display: none;
