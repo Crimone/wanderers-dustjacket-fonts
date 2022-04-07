@@ -285,6 +285,10 @@ a:link{color: #2200AA}
 a:visited{color: #2200AA}
 a:hover{color: #cd00bd}
 
+#side-bar a:visited{color: #2200AA}
+#side-bar a:hover{color: #cd00bd}
+
+#top-bar ul li.sfhover a, #top-bar ul li:hover a,#top-bar ul li ul a, #top-bar a:hover{color: #2200AA}
 
 .underline-on-hover a:link{color: black}
 
@@ -303,7 +307,7 @@ border-bottom: solid 1px #61006c;
 }
 .page-rate-widget-box .rateup a,
 .page-rate-widget-box .ratedown a {
-color: #006c00;
+color: #61006c;
 }
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover {
@@ -443,5 +447,10 @@ so the fixed positioning (top, left, right and/or bottom) has to match */
 #side-bar:focus-within .close-menu::before {
     pointer-events: none;
 }
+}
+}
+@media (max-width: 767px){
+#side-bar {
+    background-color: rgba(0,0,0,0.1);
 }
 }
