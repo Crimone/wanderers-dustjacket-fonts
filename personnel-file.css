@@ -269,24 +269,19 @@
 div#container-wrap {
     background: url(http://kaktuskontainer.wdfiles.com/local--files/stormbreath-hub-page/body_bg.png) top left repeat-x;}
 
-/* 藍光字 */
-.neon {
-color:#8ec3f9;
-text-shadow: 0 0 5px #f0f, 0 0 1px #00f, 0 0 1px #f00, 0 0 1px #00f,
-0 0 5px #0ff, 0 0 10px #0ff, 0 0 1px #f0f, 0 0 1px #fff;
-}
-
 /* 連結顏色與模糊特效 */
-a:link{color: #9900FF}
-a:visited{color: #9900FF}
-a:hover{color: #cd00bd}
 
+a{color: #2200AA}
 a:link{color: #2200AA}
 a:visited{color: #2200AA}
 a:hover{color: #cd00bd}
+a.newpage{color: #9900FF}
 
 #side-bar a:visited{color: #2200AA}
 #side-bar a:hover{color: #cd00bd}
+
+#login-status ul a {color: #2200AA}
+#login-status ul a:hover{color: #cd00bd}
 
 #top-bar ul li.sfhover a, #top-bar ul li:hover a,#top-bar ul li ul a, #top-bar a:hover{color: #2200AA}
 
@@ -326,8 +321,112 @@ background: #dccdea;
 color: #f0f8ff;
 }
 
+/* INFO MODULE COMPATIBILITY */
+#page-content .rate-box-with-credit-button {
+    background-color: #61006c;
+    border-color: #61006c;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+#page-content .creditButton p a {
+    border-left-color: #dccdea;
+}
+ 
+.close-credits,
+.credit-back {
+    filter: hue-rotate(294deg);
+}
+ 
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(28, 0, 31, 0.5);
+}
+ 
+
+/*title*/
 h1, #page-title {
     color: #61006c;
+}
+
+/*search-bar*/
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+ 
+#search-top-box-form input[type=submit] {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+
+/* YUI-TABS */
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    filter: hue-rotate(294deg);
+-webkit-filter: hue-rotate(294deg);
+}
+
+
+/*side-bar*/
+
+#side-bar .heading {
+    color: #5c0066;
+    border-bottom: solid 1px #5c0066;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+#side-bar .side-block {
+    border: 1px solid #5a0c38;
+    box-shadow: 0 2px 6px rgb(90 12 56 / 50%);
+}
+
+.side-block .menu-item > .image {
+    filter: hue-rotate(294deg);
+    -webkit-filter: hue-rotate(294deg);
+}
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(294deg);
+    -webkit-filter: hue-rotate(294deg);
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: url(http://scpsandboxcn.wikidot.com/local--files/mercuresphere/expand.png);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #5c0066;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #2200AA;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #cd00bd;
+}
+
+@media (max-width: 767px){
+#side-bar {
+    background-color: #8b7a8c;
+}
 }
 
 /* source: http://ah-sandbox.wikidot.com/component:collapsible-sidebar-x1 */
@@ -378,7 +477,7 @@ h1, #page-title {
     overflow-y: auto;
     z-index: 10;
     padding: 1em 1em 0 1em;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #8b7a8c;
     transition: left 0.4s ease-in-out;
 
     scrollbar-width: thin;
@@ -447,10 +546,5 @@ so the fixed positioning (top, left, right and/or bottom) has to match */
 #side-bar:focus-within .close-menu::before {
     pointer-events: none;
 }
-}
-}
-@media (max-width: 767px){
-#side-bar {
-    background-color: rgba(0,0,0,0.1);
 }
 }
