@@ -40,8 +40,8 @@
 :root:lang(cn){
      --header-title: "被放逐者之图书馆";    
     --body-font: Texturina, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
-    --header-font: 'Ma Shan Zheng', 'lisu', 'Noto Serif SC',  zuijinregular,  Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
-    --title-font: 'Ma Shan Zheng', 'lisu', 'Noto Serif SC',  "EB Garamond", Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
+    --header-font: zuijinregular,'Ma Shan Zheng', 'lisu', 'Noto Serif SC',  zuijinregular,  Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
+    --title-font: "EB Garamond", 'Ma Shan Zheng', 'lisu', 'Noto Serif SC',  Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
     --UI-font:  "EB Garamond", Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
     --mono-font: Recursive, Consolas, monaco,  '仿宋', 'Noto Serif SC',  monospace;
 }
