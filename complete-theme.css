@@ -1588,6 +1588,65 @@ table.wiki-content-table th:last-of-type {
     --wght: 500;
 }
 
+
+/* Rating Module With Credit Button */
+.rate-box-with-credit-button .page-rate-widget-box {
+    background:
+     linear-gradient(to top,
+     rgba(30, 55, 30, 1) 0,
+     rgba(130, 160, 135, 1) 100%);
+    background:
+     linear-gradient(to top,
+     rgba(var(--swatch-menubg-dark-color), 1) 0,
+     rgba(var(--swatch-menubg-medium-color), 1) 100%);
+    letter-spacing: 0.05em;
+}
+
+.rate-box-with-credit-button .creditButton {
+    background:
+     linear-gradient(to top,
+     rgba(30, 55, 30, 1) 0,
+     rgba(130, 160, 135, 1) 100%);
+    background:
+     linear-gradient(to top,
+     rgba(var(--swatch-menubg-dark-color), 1) 0,
+     rgba(var(--swatch-menubg-medium-color), 1) 100%);
+    letter-spacing: 0.05em;
+}
+.rate-box-with-credit-button>.creditButton>p>a {
+    display: flex;
+    margin-left: 0;
+    border-left: none;
+    background:
+     linear-gradient(to top,
+     rgba(var(--swatch-menubg-dark-color), 1) 0,
+     rgba(var(--swatch-menubg-medium-color), 1) 100%);
+}
+
+#page-content .rate-box-with-credit-button>.creditButton>p>a:after {
+    background-color: rgba(var(--rating-module-text-color), 50%);
+}
+
+.rate-box-with-credit-button .page-rate-widget-box .rate-points,
+.rate-box-with-credit-button .page-rate-widget-box .rateup,
+.rate-box-with-credit-button .page-rate-widget-box .ratedown,
+.rate-box-with-credit-button .page-rate-widget-box .cancel,
+.rate-box-with-credit-button .page-rate-widget-box .rateup a,
+.rate-box-with-credit-button .page-rate-widget-box .ratedown a,
+.rate-box-with-credit-button .page-rate-widget-box .cancel a {
+    font-family: var(--body-font);
+    line-height: 2ch;
+    --wght: 500;
+}
+
+@supports (display:grid){
+    [id*=u-credit] .credit.first,
+    [id*=u-credit] .credit.otherwise {
+        overflow-y: hidden;
+    }
+}
+
+
 .fancyhr hr {
     box-sizing: border-box;
     height: 0;
