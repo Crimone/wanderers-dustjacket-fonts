@@ -24,12 +24,12 @@
 
 /*  Imports (!IMPT)
 ==============================================================================*/
-@import url('https://cdn.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/css/min/normalize.min.css');
-@import url('https://cdn.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/css/min/black-highlighter.min.css');
+@import url('https://fastly.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/css/min/normalize.min.css');
+@import url('https://fastly.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/css/min/black-highlighter.min.css');
 
-@import url("https://cdn.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts/typefaces.css");
+@import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts/typefaces.css");
 /* 字体 */
-@import url("https://cdn.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts/fonts.css");
+@import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts/fonts.css");
 
 
 
