@@ -51,8 +51,8 @@ div#extra-div-3 {
     width: 100%;
     top: 140px;
     position: absolute;
-    background-color: rgb(var(--gray-monochrome));
-    background-image: rgb(var(--gray-monochrome));
+    background-color: rgb(var(--dark-gray-monochrome));
+    background-image: rgb(var(--dark-gray-monochrome));
     border-top: solid 1px rgb(var(--bright-accent));
     border-bottom: solid 1px rgb(var(--bright-accent));
 } /* Green top bar */
