@@ -250,10 +250,7 @@ hr {
     height: .125rem;
     border: 0;
     border-top: 0.0625rem solid transparent;
-    background: url(https://wanderers-library.wikidot.com/local--files/component:dustjacket-theme/goldfoil.png);
-    background-color: rgba(255, 219, 90);
-    background-color: rgba(var(--bright-accent));
-    background-size: cover;
+    background-color: rgba(var(--dark-gray-monochrome));
 }
 
 #page-title,
