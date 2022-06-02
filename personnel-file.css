@@ -247,10 +247,7 @@ div.earthworm div.inner > div {
 }
 
 hr {
-    height: .125rem;
     border: 0;
-    border-top: 0.0625rem solid transparent;
-    background-color: rgba(var(--dark-gray-monochrome));
 }
 
 #page-title,
