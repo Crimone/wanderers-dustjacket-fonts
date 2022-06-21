@@ -107,7 +107,7 @@
 ==============================================================================*/
 :root:lang(cn) {
     --header-title: "被放逐者之图书馆";
-    --body-font: Texturina, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, 'Noto Sans SC', sans-serif;
+    --body-font: Texturina, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, '微软雅黑', 'Noto Sans SC', sans-serif;
     --header-font: zuijinregular,'HanWang WeiBeiMedium-Gb5', 'Ma Shan Zheng', '华文隶书', 'lisu', 'Noto Serif SC', Big Caslon, Book Antiqua, Palatino Linotype, Georgia, serif;
     --title-font: "EB Garamond", 'HanWang WeiBeiMedium-Gb5', 'Ma Shan Zheng', '华文隶书', 'lisu', 'Noto Serif SC', Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
     --UI-font: "EB Garamond", Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
@@ -2696,4 +2696,8 @@ div.earthworm div.inner > div {
         display: block;
         text-align: right;
     }
+}
+
+div.excerpts-tt a {
+    font-weight:700;
 }
