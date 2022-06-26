@@ -170,6 +170,10 @@ div#extra-div-3 {
     }
 }
 
+#search-top-box {
+    display: none;
+}
+
 /* TITLE */
 #page-title {
     font-size: 210%;
@@ -341,7 +345,10 @@ h2, h3, h4, h5, h6 {
     border: 0.2em solid rgb(var(--bright-accent));
     background-color: rgb(var(--gray-monochrome));
     color: rgb(var(--bright-accent));
-    }
+}
+.mobile-top-bar {
+    bottom: -0.2em;
+}
 }
 
 /* BODY */
@@ -382,8 +389,6 @@ a.newpage{color: #9900FF}
  
 #login-status ul a {color: #2200AA}
 #login-status ul a:hover{color: #cd00bd}
- 
-#top-bar ul li.sfhover a, #top-bar ul li:hover a,#top-bar ul li ul a, #top-bar a:hover{color: #2200AA}
  
 .underline-on-hover a:link{color: black}
 
