@@ -1,8 +1,7 @@
 /*
-    Sigma-9 Wanderers' DustJacket Theme
+    Sigma-9 Sister Luvere's Dream of the Stars Theme
     [2020 Wikidot Theme]
-    By DrMacro
-    Adapted from Wanderers' DustJacket Theme by Woedenaz
+    By Mercuresphere
     Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan
 */
 @import url("https://fastly.jsdelivr.net/gh/scpwiki/sigma9/sigma9.css");
@@ -16,19 +15,25 @@
     --mono-font: adaptive-mono, "PT Mono", "Andale Mono", "Courier New", NSimSun, Courier, monospace;
 
     --white-monochrome: 252, 252, 252;
-    --pale-gray-monochrome: 214, 245, 255;
-    --light-pale-gray-monochrome: 215, 255, 255;
+    --pale-gray-monochrome: 233, 240, 255;
+    --light-pale-gray-monochrome: 251, 242, 255;
 
     --very-light-gray-monochrome: 220, 222, 230;
-    --light-gray-monochrome: 70, 130, 183;
+    --light-gray-monochrome: 91, 97, 138;
 
-    --gray-monochrome: 0, 35, 100;    
+    --gray-monochrome: 43, 14, 116;
 
-    --dark-gray-monochrome: 10, 30, 55;
+    --dark-gray-monochrome: 41, 26, 91;
 
     --bright-accent: 255, 219, 90;
     --medium-accent: 228, 180, 28;
-    --dark-accent: 185, 150, 17;
+    --dark-accent: 41, 26, 91;
+
+    --alt-accent: 153, 0, 255;
+
+    --link-color: 48, 0, 171;
+    --visited-link-color: 48, 0, 171;
+    --hover-link-color: 205, 0, 189;
 
     --gradient-header:
            linear-gradient(to bottom, rgba(var(--dark-gray-monochrome), 1) 0%,
@@ -41,7 +46,7 @@
 
 /* HEADER */
 div#container-wrap {
-    background: url("https://wanderers-sandbox.wdfiles.com/local--files/admin%3Athemes/wlsb-headerbg.png") top no-repeat;
+    background: url("https://evernight-aquarium.wdfiles.com/local--files/tale%3Aextracts/flowing.jpg") top no-repeat;
     background-size: auto 142px;
 }
 
@@ -51,8 +56,8 @@ div#extra-div-3 {
     width: 100%;
     top: 140px;
     position: absolute;
-    background-color: rgb(var(--gray-monochrome));
-    background-image: rgb(var(--gray-monochrome));
+    background-color: rgb(var(--dark-gray-monochrome));
+    background-image: rgb(var(--dark-gray-monochrome));
     border-top: solid 1px rgb(var(--bright-accent));
     border-bottom: solid 1px rgb(var(--bright-accent));
 } /* Green top bar */
@@ -73,13 +78,24 @@ div#extra-div-3 {
 }
 #header h1 a::before {
     content: "Evernight Aquarium";
+    display: block;
     color: rgb(var(--bright-accent));
-    text-shadow: inherit;
-    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);
+    text-shadow: rgba(var(--dark-gray-monochrome), 0.5) 0.125rem 0rem 0, rgba(var(--gray-monochrome), 0.5) 0.0675rem 0.1052rem 0, rgba(var(--gray-monochrome), 0.5) -0.052rem 0.1137rem 0, rgba(var(--dark-gray-monochrome), 0.5) -0.1237rem 0.0176rem 0, rgba(var(--dark-gray-monochrome), 0.5) -0.0817rem -0.0946rem 0, rgba(var(--dark-gray-monochrome), 0.5) 0.0355rem -0.1199rem 0, rgba(var(--dark-gray-monochrome), 0.5) 0.12rem -0.0349rem 0;
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);;
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     overflow-wrap: normal;
+    font-size: 125%;
+}
+#header h1 a::after {
+    content: "Evernight Aquarium";
+    color: rgb(var(--bright-accent));
+    text-shadow: none;
+    background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Adustjacket-sigma/goldfoil.png);;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 125%;
 }
 
@@ -97,6 +113,7 @@ div#extra-div-3 {
         padding: 95px 0px;
     }
 }
+
 /* LOG-IN INFO */
 #login-status {
     color: rgb(var(--pale-gray-monochrome));
@@ -352,29 +369,23 @@ body {
 /* OTHER STRUCTURAL ELEMENTS */
 
 /* LINKS */
-a {
-    color: rgb(var(--medium-accent));
-    font-weight: bold;
-}
-a:visited {
-    color: rgb(var(--dark-accent));
-}
-#side-bar a,
-#side-bar a:visited,
-#side-bar a.newpage {
-    color: rgb(93, 111, 93);
-}
-blockquote a,
-div.blockquote a {
-    color: rgb(var(--dark-accent));
-}
-blockquote a:visited,
-div.blockquote a:visited {
-    color: rgb(153, 123, 15);
-}
-a.newpage {
-    color: #d61;
-}
+/* link-color */
+ 
+a{color: #2200AA}
+a:link{color: #2200AA}
+a:visited{color: #2200AA}
+a:hover{color: #cd00bd}
+a.newpage{color: #9900FF}
+ 
+#side-bar a:visited{color: #2200AA}
+#side-bar a:hover{color: #cd00bd}
+ 
+#login-status ul a {color: #2200AA}
+#login-status ul a:hover{color: #cd00bd}
+ 
+#top-bar ul li.sfhover a, #top-bar ul li:hover a,#top-bar ul li ul a, #top-bar a:hover{color: #2200AA}
+ 
+.underline-on-hover a:link{color: black}
 
 /* CODE */
 .code {
@@ -469,7 +480,7 @@ hr {
     background-color: rgba(var(--bright-accent), 0);
     height: 0;
     box-sizing: border-box;
-    border-image-source: url(https://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_hr.png);
+    border-image-source: url(https://evernight-aquarium.wdfiles.com/local--files/tale%3Aextracts/wl_hr.png);
     border-image-repeat: round round;
     background: none;
     border-image-slice: 80 500 80 500 fill;
@@ -488,7 +499,7 @@ hr {
 table.wiki-content-table th {
     color: rgb(var(--bright-accent));
     background-color: rgb(var(--dark-gray-monochrome));
-    border-color: rgb(70, 130, 183);
+    border-color: rgb(var(--light-gray-monochrome));
 }
 
 /* footnote by 7happy7 */
