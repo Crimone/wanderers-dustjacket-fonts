@@ -1,9 +1,4 @@
-@import url('https://bhl.scpwikicn.com/css/min/normalize.min.css');
-@import url('https://fastly.jsdelivr.net/gh/Etinjat/Font-CSS@main/Typeface_HanWangWeiBeiMedium-Gb5.css');
-@import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/typefaces.css");
-@import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/fonts.css");
-
-@font-face {
+@import url('https://bhl.scpwikicn.com/css/min/normalize.min.css'); @import url('https://fastly.jsdelivr.net/gh/Etinjat/Font-CSS@main/Typeface_HanWangWeiBeiMedium-Gb5.css'); @import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/typefaces.css"); @import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/fonts.css"); @font-face {
     font-family: 'Anonymous Pro';
     font-style: normal;
     font-weight: 400;
@@ -13780,4 +13775,62 @@ div.excerpts-tt a {
 
 #page-title::before, .meta-title::before, #page-title::after, .meta-title::after {
     filter: hue-rotate(207deg) saturate(109.23%) brightness(36%);
+}
+
+.ruby,ruby {
+    line-height: 1.5;
+}
+
+hr {
+    height: .125rem;
+}
+
+@media only screen and (max-width: 375px) {
+    hr {
+        height: .0625rem;
+    }
+}
+
+blockquote,.blockquote,div.blockquote,[class*="blockquote"] {
+    border: 0.1875rem outset rgb(131,124,156);
+}
+
+.left-grid {
+    float: left;
+    width: 49%;
+    height: 110px;
+}
+
+.right-grid {
+    float: right;
+    width: 49%;
+    height: 110px;
+}
+
+@media (max-width: 479px) {
+    .left-grid,.right-grid {
+        width:100%;
+        float: left;
+    }
+}
+
+@media (min-width: 480px) and (max-width:580px) {
+    .left-grid,.right-grid {
+        width:100%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width:979px) {
+    .left-grid,.right-grid {
+        width:100%;
+        float: left;
+    }
+}
+
+div.animated-collapsible-block div.collapsible-block-unfolded {
+    overflow: hidden;
+    -webkit-animation: tab-appear 0.5s ease-in-out;
+    -moz-animation: tab-appear 0.5s ease-in-out;
+    animation: tab-appear 0.5s ease-in-out;
 }
