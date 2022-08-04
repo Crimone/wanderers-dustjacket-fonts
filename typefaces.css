@@ -4,7 +4,7 @@
          url(https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/zuijinregular-bold.woff) format('woff');
     font-weight: bold;
     font-style: normal;
-
+    font-display: swap;
 }
 
 
@@ -16,7 +16,7 @@
          url(https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/zuijinregular-lighter.woff) format('woff');
     font-weight: lighter;
     font-style: normal;
-
+    font-display: swap;
 }
 
 
@@ -28,4 +28,5 @@
          url(https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/zuijinregular-normal.woff) format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
