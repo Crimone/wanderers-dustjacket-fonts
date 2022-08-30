@@ -7,15 +7,24 @@
 @import url("https://fastly.jsdelivr.net/gh/Crimone/wanderers-dustjacket-fonts@main/typefaces.css"); @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap'); @import url("https://fonts.googleapis.com/css2?family=Recursive:CRSV,MONO@0,1&display=swap"); @import url("https://fastly.jsdelivr.net/gh/Crimone/typefaces@main/whz/whz.css"); /* ----BEGIN---- */
 :root {
     /* Header */
-    --logo-image: url("https://wanderers-library.wikidot.com/local--files/component:dustjacket-theme/wl_logo.png");
-    --header-title: "被放逐者之图书馆";
-    --header-subtitle: " ";
-    --body-font: adelle-sans, 'Lato', '微软雅黑', sans-serif;
-    --header-font: "Anonymous Pro",'HanWang WeiBeiMedium-Gb5', 'zuijinregular', 'Poppins', sans-serif;
-    --title-font: "EB Garamond", 'HanWang WeiBeiMedium-Gb5', 'kaiti', 'Noto Serif SC', Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
-    --mono-font: Recursive, adaptive-mono, "PT Mono", "Andale Mono", "Courier New", '仿宋', 'Noto Serif SC', Courier, monospace;
-    --gradient-header: url("https://wanderers-library.wdfiles.com/local--files/component%3Atheme/wl-headerbg.png");
-    --header-background-image-size: auto var(--header-height-on-desktop);
+    --logo-image:
+    url("https://wanderers-library.wikidot.com/local--files/component:dustjacket-theme/wl_logo.png");
+    --header-title:
+    "被放逐者之图书馆";
+    --header-subtitle:
+    " ";
+    --body-font: adelle-sans,
+    'Lato', '微软雅黑', sans-serif;
+    --header-font:
+    "Anonymous Pro",'HanWang WeiBeiMedium-Gb5', 'zuijinregular', 'Poppins', sans-serif;
+    --title-font:
+    "EB Garamond", 'HanWang WeiBeiMedium-Gb5', 'kaiti', 'Noto Serif SC', Big Caslon, Book Antiqua, Palatino Linotype, 'Noto Serif SC', Georgia, serif;
+    --mono-font: Recursive, adaptive-mono,
+    "PT Mono", "Andale Mono", "Courier New", '仿宋', 'Noto Serif SC', Courier, monospace;
+    --gradient-header:
+    url("https://wanderers-library.wdfiles.com/local--files/component%3Atheme/wl-headerbg.png");
+    --header-background-image-size: auto
+    var(--header-height-on-desktop);
     --white-monochrome: 252, 252, 252;
     --pale-gray-monochrome: 173, 193, 177;
     --light-pale-gray-monochrome: 255, 250, 215;
@@ -33,23 +42,29 @@
     /* bright yellow */
     --medium-accent: 228, 180, 28;
     /* medium yellow */
-    --dark-accent: var(--dark-gray-monochrome);
+    --dark-accent:
+    var(--dark-gray-monochrome);
     /* dark yellow */
     --alt-accent: 221, 102, 17;
-    --newpage-color: var(--alt-accent);
-    --dark-medium-accent: var(--medium-accent);
+    --newpage-color:
+    var(--alt-accent);
+    --dark-medium-accent:
+    var(--medium-accent);
     --header-height-on-desktop: 10rem;
     --header-height-on-mobile: 7.5rem;
     --topbar-height-on-desktop: 1.625rem;
     --topbar-height-on-mobile: 3rem;
-    --body-width-on-desktop: 61.250rem;
+    --body-width-on-desktop: 53.50rem;
     --ui-wght: 700;
     --min-font-size: 0.8125rem;
     --max-font-size: 0.9375rem;
-    --base-font-size: var(--max-font-size);
+    --base-font-size:
+    var(--max-font-size);
     scrollbar-color: rgb(var(--medium-accent)) rgb(var(--dark-gray-monochrome));
-    --user-account-mask: url("https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/user-account-mask.svg");
-    --search-top-box-mask: url("https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/search-top-box-mask.svg");
+    --user-account-mask:
+    url("https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/user-account-mask.svg");
+    --search-top-box-mask:
+    url("https://fastly.jsdelivr.net/gh/Crimone/crimson-anemone@main/files/search-top-box-mask.svg");
 }
 
 @media only screen and (max-width: 56.25rem) {
@@ -1177,7 +1192,7 @@ blockquote, div.blockquote {
 hr {
     height: .125rem;
     border: 0;
-    border-top: 0.0625rem solid transparent;
+    border-top: 0;
     background-color: rgba(var(--medium-accent));
     background-image: none;
     -webkit-background-size: cover;
@@ -2478,6 +2493,20 @@ div.animated-collapsible-block div.collapsible-block-unfolded {
 
 /* ====excerpts==== */
 
+:root {
+    --excerpts-padding: 0.5rem;
+    --excerpts-padding-opt: -0.6rem;
+    --excborder-wrap-width: 1px;
+    --excborder-mid-width: 1px;
+    --excborder-title-width: 1px;
+    --excerpts-bgcolor: #FFFDD9;
+    --excerpts-text: #333;
+    --excerpts-wrap-margin: inherit;
+    --golden-color: 0,79,0;
+    --excborder-wrap-color: rgb(var(--golden-color));
+    --excborder-mid-color: #aaaaaa;
+    --excborder-title-color: #aaaaaa;
+}
 
 .excerpts-wrap {
     display: flex;
@@ -2693,4 +2722,20 @@ div.excerpts-tt a {
         width:100%;
         float: left;
     }
+}
+
+/*hr */
+
+hr {
+    height: .125rem;
+}
+
+@media only screen and (max-width: 375px) {
+    hr {
+        height: .0625rem;
+    }
+}
+
+.ruby, ruby {
+    line-height: 1.5;
 }
