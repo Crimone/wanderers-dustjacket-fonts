@@ -13,8 +13,7 @@
     "被放逐者之图书馆";
     --header-subtitle:
     " ";
-    --body-font: adelle-sans,
-    'Lato', '微软雅黑', sans-serif;
+    --body-font: '微软雅黑', sans-serif;
     --header-font:
     "Anonymous Pro",'HanWang WeiBeiMedium-Gb5', 'zuijinregular', 'Poppins', sans-serif;
     --title-font:
@@ -682,7 +681,7 @@ div#owindow-1.owindow .content.modal-body h1 {
 }
 
 #side-bar a:visited {
-    color: rgb(var(--medium-accent));
+    color: rgb(var(--visited-link-color));
 }
 
 /* SIDE-BAR IMAGES */
@@ -764,7 +763,7 @@ div#owindow-1.owindow .content.modal-body h1 {
         overflow-y: auto;
         z-index: 10;
         padding: 1em 1em 0 1em;
-        background-color: rgb(124, 147, 126);
+        background-color: rgb(163, 168, 178);
         transition: left 0.4s ease-in-out;
         scrollbar-width: thin;
     }
@@ -2738,4 +2737,43 @@ hr {
 
 .ruby, ruby {
     line-height: 1.5;
+}
+
+
+.scrolled-block, .search-tool-block {
+    overflow: scroll;
+}
+.scrolled-block::-webkit-scrollbar, .search-tool-block::-webkit-scrollbar {
+    display: none;
+}
+
+.search-tool-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.search-tool-block table.wiki-content-table td {
+    padding: 0.5em 2em 0.5em 0.7em;
+}
+
+.search-tool-block table.wiki-content-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 375px) {
+    .scrolled-block table.wiki-content-table td {
+        padding: 0.6em 2em 0.6em 0.7em;
+    }
+    
+    .scrolled-block table.wiki-content-table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        white-space: nowrap;
+    }
 }
